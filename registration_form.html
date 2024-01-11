@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border-radius: 10px;
+            align-items: center;
+            margin-left: 15%;
+            width: 70%;
+            background-color: rgb(173, 228, 210);
+            border: 2px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form >
+        <h1>Registration form</h1>
+        <div>
+        Enter name: <input type="text" name="name" required placeholder="firstname lastname" pattern="[A-Z][a-z]*[ ][A-Z][a-z]*" maxlength="32" min="2"><br><br>
+        &emsp;Number: <input type="text" name="number" pattern="[7-9]{1}[0-9]{9}" required><br><br>
+        &emsp;&emsp;Email: <input type="email" name="email" required><br><br>
+        &emsp;Password: <input type="password" name="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required ><br><br>
+        Gender: <input type="radio" name="gender" required>Male
+        <input type="radio" name="gender" >Female
+        <input type="radio" name="gender" >Other<br><br>
+        Date of Birth: <input type="date" min="1995-01-01" max="2005-12-31" required><br><br>
+        Year of Graduation: <select required>
+            <option value="" ></option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+        </select><br><br>
+        Favourite Color: <input type="color" border-radius=><br><br>
+        Select domain of interest:<br>
+        <input type="checkbox">Web Application Development<br>
+        &emsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Android Application Development<br><br>
+        Are you liking the current internship program? <br>
+        0<input type="range" min="0" max="10">10<br><br>
+
+        Address:<textarea></textarea><br>
+
+        <button type="submit">Submit</button><br><br>
+        </div>
+
+
+    </form>
+</body>
+</html>
